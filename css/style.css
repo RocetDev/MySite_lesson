@@ -1,0 +1,112 @@
+body {
+    font-family: monospace;
+    font-size: 12pt;
+    color: white;
+    background-color: #343440;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #00c3ff;
+}
+
+a:hover {
+    color: #2f6575;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 20% 1% 20%;
+    background-color: #2C2C33;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #D1D1D1;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.content-wrapper {}
+
+#photo-container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#rotating-photo:hover {
+    animation: rotate 0.4s linear infinite;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #2C2C33;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.site-footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2C2C33;
+    text-align: center;
+}
